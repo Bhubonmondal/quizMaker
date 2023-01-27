@@ -25,14 +25,14 @@
               <form action="post" id="answerID">
                      <p id="questionNo" style="text-align: center; font-size: 30px;"></p>
                      <br>
-                     <input type="radio" name="answer" value="answer1">
-                     <label for="answer1">I'm option 1</label>
+                     <input type="radio" name="answer" value="1" >
+                     <label for="answer1" id="answer1"></label>
                      <br>
-                     <input type="radio" name="answer" value="answer2">
-                     <label for="answer2">I'm option 2</label>
+                     <input type="radio" name="answer" value="2">
+                     <label for="answer2" id="answer2"></label>
                      <br>
-                     <input type="radio" name="answer" value="answer3">
-                     <label for="answer3">I'm option 3</label>
+                     <input type="radio" name="answer" value="3">
+                     <label for="answer3" id="answer3"></label>
               </form>
        </div>
        <!--DIV2-->
@@ -44,6 +44,25 @@
               <button onclick="next()">Next >></button>
        </div>
        <!--DIV3-->
+
+       <!--Asking for Retry Or Submit-->
+              <div id="div4" style="display: none;">
+                     <h1><u>Question Ended</u></h1>
+                     <button onclick="tryAgain()">Retry</button>
+                     <br>
+                     <button onclick="submit()">Submit</button>
+              </div>
+       <!--Asking for Retry Or Submit-->
+
+       <!--Result Screen-->
+              <div id="resultScr" style="display: none;">
+                     <h1><u>Your Result</u></h1>
+                     <h1 id="myReaction"></h1>
+                     <h1 id="result"></h1>
+                     <br>
+                     <button onclick="tryAgain()">Try Again</button>
+              </div>
+       <!--Result Screen-->
 
 <script src="script.js"></script>
 </body>
