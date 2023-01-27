@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <title>Quiz Maker</title>
+
+       <!--Metadata-->
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <!--Metadata-->
+
+       <!--CSS-->
+       <link rel="stylesheet" href="style.css">
+       <!--CSS-->
+</head>
+<body>
+       <!--DIV1-->
+       <div id="div1">
+              <h1 id="questionId">Title</h1>
+       </div>
+       <!--DIV1-->
+
+       <!--DIV2-->
+       <div id="div2">
+              <form action="post" id="answerID">
+                     <p id="questionNo" style="text-align: center; font-size: 30px;"></p>
+                     <br>
+                     <input type="radio" name="answer" value="answer1">
+                     <label for="answer1">I'm option 1</label>
+                     <br>
+                     <input type="radio" name="answer" value="answer2">
+                     <label for="answer2">I'm option 2</label>
+                     <br>
+                     <input type="radio" name="answer" value="answer3">
+                     <label for="answer3">I'm option 3</label>
+              </form>
+       </div>
+       <!--DIV2-->
+
+       <!--DIV3-->
+       <div id="div3">
+              <button onclick="prev()"><< Prev</button>
+              <button onclick="skip()">Skip</button>
+              <button onclick="next()">Next >></button>
+       </div>
+       <!--DIV3-->
+
+<script src="script.js"></script>
+</body>
+</html>
