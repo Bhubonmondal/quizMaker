@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <title>Quiz Maker</title>
+
+       <!--Metadata-->
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <!--Metadata-->
+
+       <!--CSS-->
+       <link rel="stylesheet" href="style.css">
+       <!--CSS-->
+</head>
+<body>
+       <!--DIV1-->
+       <div id="div1">
+              <h1 id="questionId">Title</h1>
+       </div>
+       <!--DIV1-->
+
+       <!--DIV2-->
+       <div id="div2">
+              <form action="post" id="answerID">
+                     <p id="questionNo" style="text-align: center; font-size: 30px;"></p>
+                     <br>
+                     <input type="radio" name="answer" value="1" >
+                     <label for="answer1" id="answer1"></label>
+                     <br>
+                     <input type="radio" name="answer" value="2">
+                     <label for="answer2" id="answer2"></label>
+                     <br>
+                     <input type="radio" name="answer" value="3">
+                     <label for="answer3" id="answer3"></label>
+              </form>
+       </div>
+       <!--DIV2-->
+
+       <!--DIV3-->
+       <div id="div3">
+              <button onclick="prev()"><< Prev</button>
+              <button onclick="skip()">Skip</button>
+              <button onclick="next()">Next >></button>
+       </div>
+       <!--DIV3-->
+
+       <!--Asking for Retry Or Submit-->
+              <div id="div4" style="display: none;">
+                     <h1><u>Question Ended</u></h1>
+                     <button onclick="tryAgain()">Retry</button>
+                     <br>
+                     <button onclick="submit()">Submit</button>
+              </div>
+       <!--Asking for Retry Or Submit-->
+
+       <!--Result Screen-->
+              <div id="resultScr" style="display: none;">
+                     <h1><u>Your Result</u></h1>
+                     <h1 id="myReaction"></h1>
+                     <h1 id="result"></h1>
+                     <br>
+                     <button onclick="tryAgain()">Try Again</button>
+              </div>
+       <!--Result Screen-->
+
+<script src="script.js"></script>
+</body>
+</html>
